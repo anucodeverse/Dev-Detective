@@ -1,6 +1,6 @@
 Dev-Detective
 
-###Overview
+##Overview
 
 Dev Detective is a responsive web application that allows users to search for any GitHub profile and view detailed information in a clean and interactive UI. It also includes a Battle Mode feature where two GitHub users can be compared based on their repository stars.
 
@@ -48,15 +48,15 @@ Show Tie 🤝 if both are equal
 
 Both profiles are clickable
 
-###Loading & Error Handling
+##Loading & Error Handling
 
 Displays Loading... while fetching data
 
 Shows User Not Found for invalid usernames
 
-#Prevents UI crashes
+Prevents UI crashes
 
-Clear Functionality
+###Clear Functionality
 
 Clears all inputs
 
@@ -74,7 +74,7 @@ Responsive layout
 
 Smooth hover effects and transitions
 
-###Technologies Used
+##Technologies Used
 
 HTML5 – Structure
 
@@ -130,11 +130,11 @@ Run the project:
 
 Open index.html in your browser
 
-#Live Demo
+##Live Demo
 
 (Add your deployed link here — Netlify / GitHub Pages)
 
-#Technical Learnings
+##Technical Learnings
 
 Working with APIs using fetch()
 
@@ -150,7 +150,7 @@ Error handling and loading states
 
 Building interactive features like Battle Mode
 
-###Challenges Faced
+##Challenges Faced
 
 Handling multiple API calls efficiently
 
@@ -162,7 +162,7 @@ Calculating total stars from repositories
 
 Designing clean and responsive UI
 
- ###Future Improvements
+ ##Future Improvements
  
 Add dark/light mode toggle
 
