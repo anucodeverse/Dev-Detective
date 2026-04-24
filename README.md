@@ -1,5 +1,6 @@
 Dev-Detective
-##Overview
+
+#Overview
 
 Dev Detective is a responsive web application that allows users to search for any GitHub profile and view detailed information in a clean and interactive UI. It also includes a Battle Mode feature where two GitHub users can be compared based on their repository stars.
 
@@ -65,6 +66,7 @@ https://api.github.com/users/{username}
 
 📂 Project Structure
 Dev-Detective/
+
 │── index.html      
 → Main structure
 │── style.css   
