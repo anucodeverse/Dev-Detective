@@ -118,7 +118,7 @@ Dev-Detective/
 
 │── README.md
 
-#How to Run the Project
+##How to Run the Project
 
 Clone the repository:
 
@@ -132,7 +132,7 @@ Open index.html in your browser
 
 ##Live Demo
 
-(Add your deployed link here — Netlify / GitHub Pages)
+https://anucodeverse.github.io/Dev-Detective/
 
 ##Technical Learnings
 
