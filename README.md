@@ -69,12 +69,16 @@ Dev-Detective/
 
 │── index.html      
 → Main structure
+
 │── style.css   
 → UI styling
+
 │── script.js    
 → Application logic
+
 │── images/  
 → Screenshots
+
 │── README.md
 
 #How to Run the Project
