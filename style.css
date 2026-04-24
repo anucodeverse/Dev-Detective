@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+ 
+}
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔥 changed */
+  min-height: 100vh;       /* 🔥 changed */
+  padding-top: 40px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 420px;
+}
+/* Title */
+h1 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  transform: scale(1.05);
+}
+.mode-toggle button {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+/* Avatar */
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Links */
+.card a {
+  color: #4cafef;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Repo list */
+.repo {
+  background: rgba(255, 255, 255, 0.08);
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+.repo:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Loading & Error */
+#loading {
+  color: yellow;
+}
+
+#error {
+  color: red;
+}
+/*Battle Mode*/
+.battle-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.battle-card:hover {
+  transform: scale(1.05);
+}
+
+.battle-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+button, .battle-card {
+  transition: all 0.2s ease;
+}
+.active-mode {
+  background: #4facfe;
+  color: white;
+}
+
+#battleInputs button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff7b00, #ff3c00);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.search-box input,
+#battleInputs input {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.search-box input::placeholder,
+#battleInputs input::placeholder {
+  color: #ddd;
+}
+
+#battleInputs button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff5a00, #ff1e00);
+}
+#battleInputs input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#profileCard {
+  display: block;
+  padding: 20px;
+}
+/*clear button*/
+#clearBtn {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#clearBtn:hover {
+  background: #e60000;
+}
+
+/*winner & loser*/
+.winner {
+  border: 3px solid #00ff88;
+  box-shadow: 0 0 15px #00ff88;
+}
+.loser {
+  border: 3px solid #ff4d4d;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

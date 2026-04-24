@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dev Detective</title>
+
+  <!--Mobile Responsive--> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🔍 Dev Detective</h1>
+
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search GitHub username..."
+      >
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="mode-toggle">
+  <button onclick="setMode('single')">Single</button>
+  <button onclick="setMode('battle')">Battle</button>
+  <button id="clearBtn">Clear</button>
+</div>
+
+<div id="battleInputs" style="display:none;">
+  <input type="text" id="user1" placeholder="User 1">
+  <input type="text" id="user2" placeholder="User 2">
+  <button onclick="startBattle()">Battle 🔥</button>
+
+</div>
+
+    <!-- Status Messages -->
+    <p id="loading"></p>
+    <p id="error"></p>
+
+    <!-- Profile Card -->
+    <div id="profileCard" class="card"></div>
+  </div>
+
+</body>
+</html>
